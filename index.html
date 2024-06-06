@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Logo i Menú Animat amb Desplegable</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="menu-icon" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div class="logo-container">
+    <img src="logo.png" alt="Logo" id="logo">
+</div>
+<div id="nav-menu" class="nav-menu">
+    <ul>
+        <li><a href="#inicio" class="menu-link" data-target="inicio">Inici</a></li>
+        <li><a href="#quienes-somos" class="menu-link" data-target="quienes-somos">Qui Som</a></li>
+        <li><a href="#productos" class="menu-link" data-target="productos">Els Nostres Productes</a></li>
+        <li><a href="#compras" class="menu-link" data-target="compras">Compres</a></li>
+        <li><a href="#proyectos" class="menu-link" data-target="proyectos">Projectes de Futur</a></li>
+        <li><a href="#donde-estamos" class="menu-link" data-target="donde-estamos">On Estem</a></li>
+    </ul>
+</div>
+<div id="inicio" class="section hidden">
+</div>
+<div id="quienes-somos" class="section hidden">
+    <h1>Qui Som</h1>
+    <div class="info-box">
+        <p>Som una empresa que volem afegir sabor a l'aigua perquè sigui més divertida. Els nostres creadors són Pol, Roger, Isma, Roc.</p>
+    </div>
+</div>
+<div id="productos" class="section hidden">
+    <h1>Els Nostres Productes</h1>
+    <div class="product-box">
+        <ul>
+            <li>Pinya <span class="toggle-image">▶</span><img src="imagenes/piña.png" class="product-image hidden" alt="Pinya"></li>
+            <li>Mango <span class="toggle-image">▶</span><img src="imagenes/mango.png" class="product-image hidden" alt="Mango"></li>
+            <li>Préssec <span class="toggle-image">▶</span><img src="imagenes/melocotón.png" class="product-image hidden" alt="Préssec"></li>
+            <li>Taronja <span class="toggle-image">▶</span><img src="imagenes/naranja.png" class="product-image hidden" alt="Taronja"></li>
+            <li>Llimona <span class="toggle-image">▶</span><img src="imagenes/limón.png" class="product-image hidden" alt="Llimona"></li>
+        </ul>
+    </div>
+</div>
+<div id="compras" class="section hidden">
+    <h1>Compres</h1>
+    <div class="shop-box">
+        <div class="item-box">
+            <img src="imagenes/piña.png" class="shop-image" alt="Pinya">
+        </div>
+        <div class="item-box">
+            <img src="imagenes/mango.png" class="shop-image" alt="Mango">
+        </div>
+        <div class="item-box">
+            <img src="imagenes/melocotón.png" class="shop-image" alt="Préssec">
+        </div>
+        <div class="item-box">
+            <img src="imagenes/naranja.png" class="shop-image" alt="Taronja">
+        </div>
+        <div class="item-box">
+            <img src="imagenes/limón.png" class="shop-image" alt="Llimona">
+        </div>
+    </div>
+</div>
+<div id="proyectos" class="section hidden">
+    <h1>Projectes de Futur</h1>
+    <div class="info-box">
+        <p>El nostre projecte serà segons guanyem més capital anirem traient nous sabors. Haurem d'estar atents a la reacció del mercat sobre el nostre producte.</p>
+    </div>
+</div>
+<div id="donde-estamos" class="section hidden">
+    <h1>On Estem</h1>
+    <div class="info-box">
+        <p>Estem a Madrid, una zona on la mà d'obra qualificada per a un petit laboratori està bé. La nostra fàbrica són impressores 3D que requereixen informàtics i per això hem triat Madrid.</p>
+    </div>
+</div>
+
+
+<!-- Modal per a compres -->
+<div id="purchase-modal" class="modal hidden">
+    <div class="modal-content">
+        <p>Vols comprar?</p>
+        <button id="accept-button">Acceptar</button>
+        <button id="reject-button">Rebutjar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
